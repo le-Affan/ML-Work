@@ -1,0 +1,74 @@
+Project Task Checklist (Coffee Sales Dataset)
+
+📂 1. Load and Inspect Dataset
+ Load the dataset from Excel using pd.read_excel()
+
+ Display the first few rows using .head()
+
+ Check shape and column names
+
+ Use .info() and .describe() to understand data types and stats
+
+ Check for missing values using .isna().sum() 
+
+
+
+🔍 2. Access and View Specific Data
+ Access the product_detail and unit_price columns
+
+ Access a specific row using .iloc[] and .loc[]
+
+
+
+📊 3. Sort Data
+ Sort by unit_price in descending order to find most expensive items
+
+ Sort product_detail alphabetically (A–Z)
+
+
+
+🧮 4. Filter Data
+ Filter rows where unit_price > 200
+
+ Filter using regex: product_detail contains "Latte"
+
+ Use .query() to filter: transaction_qty > 2 and unit_price < 150
+
+
+
+➕ 5. Create New Columns
+ Add a total_price column: unit_price * transaction_qty
+
+ Add a discounted_price column with 10% discount applied
+
+
+
+❗ 6. Handle Missing Values
+ Check for missing values after modifications
+
+ Fill store_location or product_detail if any go missing
+
+
+
+📈 7. Grouping and Aggregation
+ Use .groupby() to find total total_price per product_type
+
+ Use .groupby() to calculate average transaction_qty per store_location
+
+
+
+✂️ 8. String Operations
+ Convert all product_detail values to lowercase using .str.lower()
+
+ (Optional) Extract size/type info from product_detail using .str.extract()
+
+
+
+🔁 9. Iterate Over Rows
+ Use .iterrows() to print rows where transaction_qty > 5
+
+
+
+💾 10. Export Final Data
+ Save the cleaned DataFrame to a new Excel or CSV file using .to_excel() or .to_csv()
+
